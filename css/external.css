@@ -115,6 +115,7 @@ h3 { color:rgb(10, 27, 107);
     padding-bottom: 1em;
 }
 
+
 p {
     font-family: Lekton;
     font-size: 1em;
@@ -135,7 +136,17 @@ li {
  img {
     width: 20em;
     height: auto;
+    
  }
+
+.hoop {
+    width: 20em;
+    height: auto;
+    float: right;
+}
+
+  
+  
    
  .container {
     width: 100%;
@@ -221,6 +232,13 @@ li {
 
  }
 
+ @media ( max-width: 800px) {
+    .tools-container {
+        flex-direction: column;
+    }
+
+ }
+
  .tools-container > section {
     position:relative;
     padding: 0.5em;
@@ -249,11 +267,7 @@ align-items:  center;
 
 }
 
-@media ( max-width: 800px) {
 
-}
 
-@media ( min-width: 801px) {
 
-}
 
