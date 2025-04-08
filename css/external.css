@@ -2,11 +2,9 @@ html {
     margin: 0.5em;
 }
 
-#header, #content, #footer {
-    width: 100%;
+
     
       
-}
 
 .wrapper {
     width: 1001px
@@ -15,8 +13,8 @@ html {
     position: relative; 
 }
 
-#header  { 
-    height: 200px;
+header  { 
+    height: 30%;
     background: 1000px;
     background-color:rgb(77, 95, 175);
     margin: 0;
@@ -31,10 +29,7 @@ h1 {
     text-align: center;
 } 
 
-#header ul {
-    top: 60px;
-    left: -35px;
-    list-style-type: none;
+header div {
     position: relative;
     margin: 0;
     margin-top: 45px;
@@ -42,14 +37,13 @@ h1 {
     color: cornflowerblue;
 }
 
-#header ul li {
+header  div {
     display: inline-block;
-    margin-left: 80px;
-    margin-right: -10px;
+  
     position: relative;
 }
 
-#header ul li a {
+header  div a {
     padding-left: 15px;
     padding-right:15px ;
     display: block;
@@ -58,13 +52,16 @@ h1 {
     font-size: 1.5em;
 }
 
-.navbar ul {
-    list-style-type: none;
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar div {
     padding: 0px;
     margin: 0px;
-    text-align: center;
-    overflow: hidden;
     position: relative;
+
 }
 
 .navbar a {
@@ -76,8 +73,8 @@ h1 {
     background-color: rgb(25, 25, 81);
 }
 
-.navbar li {
-    float: center;
+.navbar div {
+    float: center; 
 }
 
 .navbar form {
@@ -90,18 +87,7 @@ h1 {
     z-index: 1;
 }
 
-.uk-search {
-    top: -0px;
-    left: 900px;
-    right: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 50px;
-    position: sticky;
-    bottom: 0;
-    z-index: 1;
-}
+
 
 h2 { color:rgb(10, 27, 107);
     font-family:  Homemade Apple, static;
@@ -112,8 +98,14 @@ h2 { color:rgb(10, 27, 107);
 h3 { color:rgb(10, 27, 107);
     font-family:  Homemade Apple, static;
     font-size: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 1em; 
 }
+
+@media ( max-width: 800px) {
+   h3 {
+    font-size: 1em;
+   }
+ }
 
 
 p {
@@ -150,12 +142,17 @@ li {
    
  .container {
     width: 100%;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 90px;
+    padding: 0px 0px;
     background-color: #6069bc;
+ }
+ @media ( max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
  }
 
  .container-section {
@@ -222,6 +219,7 @@ li {
     padding: 3px;
     background-color: rgb(77, 95, 175);
     color: white;
+    width: 100%;
   }
 
  .tools-container {
@@ -260,6 +258,20 @@ border:  20px solid black;
 padding: 10px 10px;
 font-size: 30px;
 align-items:  center;
+ }
+
+ @media (max-width: 800px) {
+    .floral {
+        grid-template-columns: auto;
+    }
+
+ }
+
+ @media (min-width: 801px) {
+    .floral {
+        grid-template-columns: auto auto auto;
+    }
+
  }
 
  .floral a:hover {
