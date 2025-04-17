@@ -3,9 +3,6 @@ html {
 }
 
 
-    
-      
-
 .wrapper {
     width: 1001px
     height  100%;
@@ -109,7 +106,6 @@ h3 { color:rgb(10, 27, 107);
    }
  }
 
-
 p {
     font-family: Lekton;
     font-size: 1em;
@@ -140,8 +136,6 @@ li {
     height: auto;
     float: right;
 }
-
-  
 /* this is the container I made to hold the flipcards and then the flipcards each have thier own dimensions and a interactive element to make them flip back and forth*/
    
  .container {
@@ -247,9 +241,6 @@ li {
     position:relative;
     padding: 0.5em;
  }
-
-    
-  
 
  .floral {
    display: grid;
@@ -568,7 +559,6 @@ align-items:  center;
  
 
  }
-
 
  main {position: relative;} /* to place scrollbar /
 
