@@ -52,7 +52,7 @@ header  div a {
     font-size: 1.5em;
     font-family: Lekton;
 }
-
+/* this is css for the header and big text for the banner of the website*/
 .navbar {
     display: flex;
     justify-content: center;
@@ -88,7 +88,8 @@ header  div a {
     z-index: 1;
 }
 
-
+/* this is my navbar and I added a dark blue hover, I used the tutorial from  https://www.w3schools.com/ which was given by chris in the cheatsheet and tweaked it so It fit the style of my website*/
+/* these are css commands for the main text of my website*/
 
 h2 { color:rgb(10, 27, 107);
     font-family:  Homemade Apple, static;
@@ -125,12 +126,14 @@ li {
     scroll-behavior: smooth;
 }
 
-
+ /* image specifics so it is responsive and fits*/
  img {
     width: 20em;
     height: auto;
-    
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px; /* Adjust the value for more or less rounded corners */
  }
+
 
 .hoop {
     width: 20em;
@@ -139,7 +142,7 @@ li {
 }
 
   
-  
+/* this is the container I made to hold the flipcards and then the flipcards each have thier own dimensions and a interactive element to make them flip back and forth*/
    
  .container {
     width: 100%;
@@ -214,6 +217,7 @@ li {
     color: white;
     transform: rotateY(180deg);
   }
+  /* my footer for the website*/
   
   footer {
     text-align: center;
@@ -222,6 +226,7 @@ li {
     color: white;
     width: 100%;
   }
+/* container with dashed lines to hold my images*/
 
  .tools-container {
     display: flex;
@@ -276,11 +281,320 @@ align-items:  center;
  }
 
  .floral a:hover {
-    background-color: rgb(86, 84, 178);
+    background-color: rgb(144, 142, 217);
 
 }
+/* these are my css grids that are holding the links and images, I made a grid of 3 in a row and added padding so that they would be spaced out and breakpoints so that it is responsive on mobile*/
+.animal {
+    display: grid;
+    border: 10px rgb(10, 14, 80);
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+  .animal > div {
+ border:  20px solid black;
+ padding: 10px 10px;
+ font-size: 30px;
+ align-items:  center;
+  }
+ 
+  @media (max-width: 800px) {
+     .animal {
+         grid-template-columns: auto;
+     }
+ 
+  }
+ 
+  @media (min-width: 801px) {
+     .animal {
+         grid-template-columns: auto auto auto;
+     }
+ 
+  }
+ 
+  .animal a:hover {
+     background-color: rgb(86, 84, 178);
+ 
+ }
+
+ .linework {
+    display: grid;
+    border: 10px rgb(10, 14, 80);
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+  .linework > div {
+ border:  20px solid black;
+ padding: 10px 10px;
+ font-size: 30px;
+ align-items:  center;
+  }
+ 
+  @media (max-width: 800px) {
+     .linework {
+         grid-template-columns: auto;
+     }
+ 
+  }
+ 
+  @media (min-width: 801px) {
+     .linework {
+         grid-template-columns: auto auto auto;
+     }
+ 
+  }
+ 
+  .linework a:hover {
+     background-color: rgb(86, 84, 178);
+ 
+ }
 
 
+ .backstitch {
+    display: grid;
+    border: 10px rgb(10, 14, 80);
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+  .backstitch > div {
+ border:  20px solid black;
+ padding: 10px 10px;
+ font-size: 30px;
+ align-items:  center;
+  }
+ 
+  @media (max-width: 800px) {
+     .backstitch {
+         grid-template-columns: auto;
+     }
+ 
+  }
+ 
+  @media (min-width: 801px) {
+     .backstitch {
+         grid-template-columns: auto auto auto;
+     }
+ 
+  }
+ 
+  .backstitch a:hover {
+     background-color: rgb(25, 23, 173);
+ 
+ }
 
 
+ .runningstitch {
+    display: grid;
+    border: 10px rgb(10, 14, 80);
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+  .runningstitch > div {
+ border:  20px solid black;
+ padding: 10px 10px;
+ font-size: 30px;
+ align-items:  center;
+  }
+ 
+  @media (max-width: 800px) {
+     .runningstitch {
+         grid-template-columns: auto;
+     }
+ 
+  }
+ 
+  @media (min-width: 801px) {
+     .runningstitch {
+         grid-template-columns: auto auto auto;
+     }
+ 
+  }
+ 
+  .runningstitch a:hover {
+     background-color: rgb(25, 23, 173);
+ 
+ }
+
+ .satinstitch {
+    display: grid;
+    border: 10px rgb(10, 14, 80);
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+  .satinstitch > div {
+ border:  20px solid black;
+ padding: 10px 10px;
+ font-size: 30px; 
+ align-items:  center;
+  }
+ 
+  @media (max-width: 800px) {
+     .satinstitch {
+         grid-template-columns: auto;
+     }
+ 
+  }
+ 
+  @media (min-width: 801px) {
+     .satinstitch {
+         grid-template-columns: auto auto auto;
+     }
+ 
+  }
+ 
+  .satinstitch a:hover {
+     background-color: rgb(25, 23, 173);
+ 
+ }
+
+ .frenchknotstitch {
+    display: grid;
+    border: 10px rgb(10, 14, 80);
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+  .frenchknotstitch > div {
+ border:  20px solid black;
+ padding: 10px 10px;
+ font-size: 30px; 
+ align-items:  center;
+  }
+ 
+  @media (max-width: 800px) {
+     .frenchknotstitch {
+         grid-template-columns: auto;
+     }
+ 
+  }
+ 
+  @media (min-width: 801px) {
+     .frenchknotstitch {
+         grid-template-columns: auto auto auto;
+     }
+ 
+  }
+ 
+  .frenchknotstitch a:hover {
+     background-color: rgb(25, 23, 173);
+ 
+ }
+
+
+ .lazydaisystitch {
+    display: grid;
+    border: 10px rgb(10, 14, 80);
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+  .lazydaisystitch > div {
+ border:  20px solid black;
+ padding: 10px 10px;
+ font-size: 30px; 
+ align-items:  center;
+  }
+ 
+  @media (max-width: 800px) {
+     .lazydaisystitch {
+         grid-template-columns: auto;
+     }
+ 
+  }
+ 
+  @media (min-width: 801px) {
+     .lazydaisystitch {
+         grid-template-columns: auto auto auto;
+     }
+ 
+  }
+ 
+  .lazydaisystitch a:hover {
+     background-color: rgb(25, 23, 173);
+ 
+ }
+
+ .bullionknotstitch {
+    display: grid;
+    border: 10px rgb(10, 14, 80);
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+  .bullionknotstitch > div {
+ border:  20px solid black;
+ padding: 10px 10px;
+ font-size: 30px; 
+ align-items:  center;
+  }
+ 
+  @media (max-width: 800px) {
+     .bullionknotstitch {
+         grid-template-columns: auto;
+     }
+ 
+  }
+ 
+  @media (min-width: 801px) {
+     .bullionknotstitch {
+         grid-template-columns: auto auto auto;
+     }
+ 
+  }
+ 
+  .bullionknotstitch a:hover {
+     background-color: rgb(25, 23, 173);
+ 
+ }
+
+/* back to the top button and scroll tutorial taken from  https://www.w3schools.com/ and tweaked so it matched my website*/
+
+ .scroll-top__link {
+    font-family: Lekton;
+    font-size: 190%;
+ 
+
+ }
+
+
+ main {position: relative;} /* to place scrollbar /
+
+section {height: 300vh;} / so we can scroll /
+
+.scroll-top {
+
+  position: absolute; /* relative to its positioned <main> parent /
+
+  top: 120vh; / starts below the bottom of the screen /
+
+  bottom: 3rem; / stops scrolling before the end /
+
+  right: 2rem; / offset from right hand side */
+
+
+.scroll-top__link {
+    color: #4226a8;
+    background-color: #6069bc;
+    float: right;
+
+  position: -webkit-sticky; /* for Safari /
+
+  position: sticky; / 'relative' until element reaches... /
+
+  top: 90vh; / 90% viewport height from the top, when it becomes 'fixed' - until its container toggles it back to 'relative' */
+
+}
 
